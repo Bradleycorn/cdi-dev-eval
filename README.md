@@ -11,6 +11,7 @@ and will show the currently selected horse (with the option to cancel the bet).
 
 The completed application looks like the screen below:
 
+![finished product](https://github.com/Bradleycorn/cdi-dev-eval/raw/master/finished-product.png)
 
 
 ## Deliverables
