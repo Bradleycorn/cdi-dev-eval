@@ -1,0 +1,126 @@
+/* app css stylesheet */
+
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.item-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.item-list li {
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: relative;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn {
+  background: #2b3956;
+  color: #fff;
+  border: none;
+  font-size: .9em;
+}
+
+.btn-cancel {
+  float: right;
+}
+
+.check {
+  color: #00b500;
+}
+
+.horse-data {
+  display: inline-block;
+  line-height: 3em;
+}
+
+.horse-bet {
+  width: 2.25em;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.horse-number {
+  width: 3em;
+  text-align: center;
+}
+
+.horse-odds {
+  float: right;
+  margin-left: 2em;
+  text-align: right;
+}
+
+
+.site-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #2b3956;
+  color: #fff;
+  margin-bottom: .75em;
+}
+
+.site-header a,
+.site-header a:active,
+.site-header a:visited,
+.site-header a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.page-title {
+  margin: 0px;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin-top: .5em;
+  margin-bottom: 0;
+  padding: 0 0 0.5em;
+}
+
+.site-nav ul > li {
+  display: inline;
+}
+
+.site-nav ul > li a {
+  padding: .5em 1em;
+}
+
+.site-nav ul > li a:hover {
+  background: #ffffff;
+  color: #2b3956;
+}
+
+main {
+  min-height: 10em;
+}
+
+.site-footer {
+  margin-top: .75em;
+  border-top: 1px solid #444;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: .8em;
+  color: #444;
+}
+
+
+.input-wrapper {
+  margin: .25em 0;
+}
+input {
+  border: 1px solid #444;
+}
+
+label {
+  width: 3em;
+  display: inline-block;
+}

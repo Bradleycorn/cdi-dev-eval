@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1 class="page-title">The Race is On!</h1>
+    </div>
+</header>
+
+<main>
+        <section ng-controller="raceController">
+
+            <div ng-if="myHorse != null" class="container my-bet">
+                My Horse: {{myHorse.name}} ({{myHorse.odds}})
+                <button ng-click="clearWager(myHorse)" class="btn btn-cancel">cancel</button>
+            </div>
+
+            <horse-list></horse-list>
+        </section>
+
+        <section class="container add-form" ng-controller="formController">
+            <div class="input-wrapper">
+                <label for="name">Name:</label>
+                <input type="text" id="name" ng-model="name" />
+            </div>
+            <div class="input-wrapper">
+                <label for="odds">Odds:</label>
+                <input type="text" id="odds" ng-model="odds" />
+            </div>
+
+            <button class="btn">Add Horse</button>
+        </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        Twin Spires Dev Evaluation Project v<span app-version></span>
+    </div>
+</footer>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+<script src="components/version/version.js"></script>
+
+<script src="services/horse-service.js"></script>
+
+<script src="controllers/race-controller.js"></script>
+<script src="controllers/horse-list-controller.js"></script>
+<script src="controllers/form-controller.js"></script>
+
+<script src="directives/horse-list-directive.js"></script>
+<script src="components/version/version-directive.js"></script>
+
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

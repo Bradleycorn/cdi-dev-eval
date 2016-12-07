@@ -1,0 +1,10 @@
+<ul class="item-list horses">
+    <li class="item" ng-repeat="horse in horses">
+
+        <button ng-if="!horse.isBet" type="button" class="horse-data horse-bet btn">Bet</button>
+        <div ng-if="horse.isBet" class="horse-data horse-bet check">&#10003;</div>
+        <div class="horse-data horse-number">{{horse.number}}</div>
+        <div class="horse-data horse-name">{{horse.name}}</div>
+        <div class="horse-data horse-odds">{{horse.odds}}</div>
+    </li>
+</ul>
