@@ -16,7 +16,10 @@ The completed application looks like the screen below:
 
 ## Deliverables
 
-You should return a complete set of code that will run the project. 
+You should return a complete set of code that will run the project. You can submit your finished project
+as a pull request on this repository, or zip it up and send via email.
+
+
 In addition, you should be able to talk about the code and be able to discuss the following topics:
 * The code changes and additions you made, how they work, and why you did things the way you did.
 * All code in the project, what it does and how it works.
