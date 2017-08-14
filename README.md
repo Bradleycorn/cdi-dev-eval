@@ -18,6 +18,7 @@ The completed application looks like the screen below:
 
 You should return a complete set of code that will run the project. Please submit your finished work
 by pushing a new branch to this repository that uses your name as the branch name (i.e. firstname-lastname). 
+Before you can push your new branch, you will need to email your github username (or the email address associated with your github account) to brad.ball@cdinteractive.com, so that we can add you as a collaborator.
 
 In addition, you should be able to talk about the code and be able to discuss the following topics:
 * The code changes and additions you made, how they work, and why you did things the way you did.
